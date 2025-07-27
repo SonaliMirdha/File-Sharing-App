@@ -100,5 +100,5 @@ MIT
 ---
 
 <p align="center">
-  <b>Made with ❤️ by Sai Gonga</b>
+  <b>Made with ❤️ by Sonali Mirdha</b>
 </p>
