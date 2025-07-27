@@ -1,7 +1,5 @@
 
-<p align="center">
-  <img src="frontend/public/logo.png" alt="File Sharing App Logo" width="120"/>
-</p>
+
 
 # File Sharing App
 
@@ -11,9 +9,7 @@ A secure, real-time file sharing application with authentication, room-based fil
 
 ---
 
-## 🚀 Live Demo
 
-👉 [Try the App on Render](https://file-sharing-app-frontend-pjlr.onrender.com)
 
 ---
 
