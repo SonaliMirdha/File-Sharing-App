@@ -1,75 +1,104 @@
+
+<p align="center">
+  <img src="frontend/public/logo.png" alt="File Sharing App Logo" width="120"/>
+</p>
+
 # File Sharing App
 
-A secure, real-time file sharing application built with React (frontend), Firebase Authentication, and a Node.js backend using Socket.IO for real-time file transfer.
+A secure, real-time file sharing application with authentication, room-based file transfer, and a modern responsive UI.
 
-## Features
-- **User Authentication:** Register, login, Google sign-in, and password reset via Firebase Auth.
-- **Room-based File Sharing:** Join/leave rooms to send and receive files in real time.
-- **Real-time File Transfer:** Upload and transfer files instantly with progress and status updates.
-- **Responsive UI:** Modern, mobile-friendly interface with clear feedback and navigation.
-- **Room Management:** Track previous rooms for quick rejoin.
-- **Security:** Auth-protected routes and backend CORS configuration.
+[![Deployed on Render](https://img.shields.io/badge/Live%20Demo-Render-blue?logo=render)](https://file-sharing-app-frontend-pjlr.onrender.com)
 
-## Tech Stack
-- **Frontend:** React, Firebase Auth, Socket.IO Client
-- **Backend:** Node.js, Express, Socket.IO
+---
 
-## Getting Started
+## 🚀 Live Demo
 
-### Prerequisites
-- Node.js (v18+ recommended)
-- npm or yarn
+👉 [Try the App on Render](https://file-sharing-app-frontend-pjlr.onrender.com)
 
-### Setup
+---
 
-#### 1. Clone the repository
-```sh
-git clone <your-repo-url>
-cd File Sharing App
+## ✨ Features
+- **User Authentication** (Sign up, Login, Logout) with Firebase
+- **Real-time File Transfer** using Socket.IO
+- **Room-based Sharing**: Share files securely in private rooms
+- **Progress Indicators** for file uploads/downloads
+- **Input Validation & Security**: File type/size checks, rate limiting, and more
+- **Responsive UI/UX**: Works across devices
+- **Environment Variable Support** for easy deployment
+
+---
+
+## 🛠️ Tech Stack
+- **Frontend:** React (Vite), Firebase Auth, Socket.IO Client
+- **Backend:** Node.js, Express, Socket.IO, dotenv, CORS
+- **Deployment:** Render
+
+---
+
+## 📦 Project Structure
+```
+File Sharing App/
+├── backend/           # Node.js + Express + Socket.IO server
+├── frontend/          # React (Vite) client
+├── .env               # Environment variables (not committed)
+├── README.md
+└── ...
 ```
 
-#### 2. Install dependencies
-- For the backend:
-  ```sh
-  cd backend
-  npm install
-  ```
-- For the frontend:
-  ```sh
-  cd ../frontend
-  npm install
-  ```
+---
 
-#### 3. Configure Environment Variables
-- In the `backend/` folder, create a `.env` file:
-  ```env
-  PORT=5001
-  ```
-- (Optional) For Firebase, update the config in `frontend/src/Firebase/firebase.js` as needed.
+## ⚙️ Setup & Installation
 
-#### 4. Run the app
-- Start the backend server:
-  ```sh
+### 1. Clone the repository
+```bash
+git clone https://github.com/saigonga/File-Sharing-App.git
+cd File-Sharing-App
+```
+
+### 2. Environment Variables
+- Copy `.env.example` to `.env` in both `backend/` and `frontend/` folders and fill in the required values.
+- **Frontend:** Set Firebase config and `VITE_BACKEND_URL`.
+- **Backend:** Set `PORT`, `FRONTEND_URL`, etc.
+
+### 3. Install dependencies
+```bash
+cd backend && npm install
+cd ../frontend && npm install
+```
+
+### 4. Run locally
+- **Backend:**
+  ```bash
   cd backend
   npm start
   ```
-- Start the frontend dev server:
-  ```sh
-  cd ../frontend
+- **Frontend:**
+  ```bash
+  cd frontend
   npm run dev
   ```
-- Open your browser at [http://localhost:5173](http://localhost:5173)
 
-## Folder Structure
-```
-File Sharing App/
-  backend/         # Node.js + Socket.IO backend
-  frontend/        # React + Firebase frontend
-```
+---
 
-## Customization
-- Update Firebase config in `frontend/src/Firebase/firebase.js`.
-- Adjust CORS or security settings in `backend/index.js` as needed.
+## 🛡️ Security
+- All file transfers are validated and rate-limited.
+- Only authenticated users can send/receive files.
+- CORS and environment variables are used for secure deployment.
 
-## License
-This project is for educational/demo purposes. Please review before using in production.
+---
+
+## 📄 License
+MIT
+
+---
+
+## 🙌 Acknowledgements
+- [Firebase](https://firebase.google.com/)
+- [Socket.IO](https://socket.io/)
+- [Render](https://render.com/)
+
+---
+
+<p align="center">
+  <b>Made with ❤️ by Sai Gonga</b>
+</p>
